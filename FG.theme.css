@@ -1,0 +1,126 @@
+/**
+ * @name FG
+ * @author Gibbu#1211
+ * @version 2.0.0
+ * @description Display your picture of choice with adjustable blur and brightness. Dark theme is required
+ * @invite ZHthyCw
+ * @donate https://paypal.me/IanRGibson
+ * @authorId 174868361040232448
+ * @source https://github.com/Gibbu/BetterDiscord-Themes/tree/master/FrostedGlass
+ * @website https://gibbu.me
+*/
+
+@import url('https://discordstyles.github.io/FrostedGlass/base.css');
+@import url('https://discord-custom-covers.github.io/usrbg/snippets/userPopouts.css');
+@import url('https://discord-custom-covers.github.io/usrbg/snippets/modals.css');
+@import url('https://monstrousdev.github.io/themes/addons/user-tags.css');
+
+:root {
+  --background-image: url('https://i.imgur.com/kYW2H5C.jpg');
+  --background-image-blur: 5px;
+  --background-image-size: cover;
+  --background-image-position: center center;
+  --popout-modal-image: var(--background-image);
+  --popout-modal-blur: 5px;
+  --popout-modal-size: cover;
+  --popout-modal-position: center center;
+  --home-button-image: url('https://gibbu.github.io/BetterDiscord-Themes/FrostedGlass/assets/discord.svg');
+  --home-button-size: cover;
+  --home-button-position: center center;
+  --serverlist-brightness: 0.8;
+  --left-brightness: 0.8;
+  --middle-brightness: 0.6;
+  --right-brightness: 0;
+  --popout-modal-brightness: 0.75;
+  --gradient-primary: 103,58,183;
+  --gradient-secondary: 63,81,181;
+  --scrollbar-colour: rgba(255,255,255,0.05);
+  --link-colour: #00b0f4;
+  --gradient-direction: 320deg;
+  --tint-colour: 255,51,159;
+  --tint-brightness: 0;
+  --font: 'Whitney';
+  --window-padding: undefinedpx;
+  --window-roundness: undefinedpx;
+  --show-gift-gif-buttons: block;
+  --update-notice-1: none;
+}
+
+body
+{
+    transition: width 0.5s linear;
+}
+
+.platform-win .typeWindows-1za-n7 {
+    height: 9px;
+    margin-top: 0;
+    position: absolute;
+    top: 1px;
+    left: 0;
+    width: 100%;
+    background: transparent;
+    transition: width 0.5s linear;
+}
+
+.platform-win .container-1r6BKw {
+    padding-right: var(--TB-header-padding, 70px);
+    transition: width 0.5s linear;
+}
+
+.platform-win .wordmarkWindows-1v0lYD {
+    display: none;
+}
+.platform-win  #app-mount.bd-detached-editor .winButton-iRh8-Z {
+    right: 30%;
+}
+
+/*Remove SVG of close button*/
+.winButtonClose-1HsbF- svg,
+.winButtonMinMax-PBQ2gm[aria-label="Maximize"] svg,
+.winButtonMinMax-PBQ2gm[aria-label="Minimize"] svg {
+    display: none;
+}
+
+/*Close caption button*/
+.winButtonClose-1HsbF- {
+    width: 12px;
+    height: 12px;
+    border-radius: 15px;
+    background-color: #FD615D;
+    margin-right: 13px;
+    margin-top: 21px;
+}
+
+/*Maximize caption button*/
+.winButtonMinMax-PBQ2gm[aria-label="Maximize"] {
+    width: 12px;
+    height: 12px;
+    border-radius: 15px;
+    background: #34C749;
+    margin-right: 7px;
+    margin-top: 21px;
+}
+
+/*Minimize caption button*/
+.winButtonMinMax-PBQ2gm[aria-label="Minimize"] {
+    width: 12px;
+    height: 12px;
+    border-radius: 15px;
+    background: #FEBC40;
+    margin-right: 7px;
+    margin-top: 21px;
+}
+
+.winButtonClose-1HsbF-:hover,
+.winButtonMinMax-PBQ2gm:hover {
+    background-color: #4C566A;
+    transition: all 0.3s ease !important;
+}
+
+.platform-win .winButton-iRh8-Z {
+    transition: width 0.5s linear;
+}
+
+.theme-dark .tooltipPrimary-1d1ph4, .theme-light .tooltipPrimary-1d1ph4 {
+    background: linear-gradient(320deg, rgba(108,53,183,1) 0%, rgba(63,81,181,1) 100%);
+}
